@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TCORP&CO</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- =======================================================
+   
+  ======================================================= -->
+  <!-- animation -->
+ 
+
+        <!--==== add icon ======-->
+  <link rel="icon" type="text/css" href="logo/logo_tcorpandco.png">
+
+
+  <!-- Start WOWSlider.com HEAD section -->
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <!-- End WOWSlider.com HEAD section -->
+
+
+
+  <script>
+
+
+    $(document).ready(function(){
+      $('.customer-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
+    });
+
+    /* script slide logo */
+
+    $('.carousel').carousel()
+
+
+  </script>
+
+   <style>
+
+     /* slide logo */
+
+     .logo
+     {
+       filter: none; /* IE6-9 */
+       -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+       -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+       -ms-transition: all .5s ease;
+       transition: all .5s ease;
+       cursor:pointer;
+     }
+
+
+     .logo:hover
+     {
+       filter: gray; /* IE6-9 */
+       -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+     }
+
+     .slide_logo
+     {
+       margin-right: auto;
+       margin-left: auto;
+       display: block;
+     }
+
+
+     #portfolio .container-fluid {
+	    margin: 0;
+       padding: 0;
+	   width: auto;
+	   /* max-width: 1920px;*/
+      /* max-width: 100%;*/
+     }
+     @media (min-width: 992px) {
+       .col-lg-4 {
+         flex: 0 0 33.33333%;
+         max-width: 33.33333%;
+       }
+     }
+
+     @media (min-width: 576px) {
+       .col-sm-6 {
+         flex: 0 0 50%;
+         max-width: 50%;
+       }
+     }
+     #portfolio .container-fluid .portfolio-box {
+       position: relative;
+       display: block;
+     }
+
+     #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       bottom: 0;
+       text-align: center;
+       opacity: 0;
+       color: #fff;
+       background: darkred;
+       transition: opacity 0.25s ease;
+       text-align: center;
+     }
+
+     #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+      /* font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+      /* font-size: 0.85rem;*/
+       font-size: 2rem;
+       font-weight: 600;
+       text-transform: uppercase;
+     }
+
+     #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+       /*font-size: 1.2rem;*/
+       font-size: 1.6rem;
+     }
+
+     #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+       opacity: 0.9;
+     }
+
+     #separateur
+     {
+	   
+	   /*background-image: url("images/2.jpg");*/
+	      background-color: #cfcfcf;
+          width: 100%;
+          height: 16em;
+          margin: 40px 0 0 0;
+          padding: 20px 0 0 0;
+          display: block;
+          vertical-align: center;
+       
+     }
+
+     #portfolio .container-fluid .portfolio-box
+     {
+        width: 105%;
+     }
+
+
+
+   </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+
+      <div class="navigation">
+
+        <div class="container">
+
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+
+						</button>
+
+            <div class="navbar-brand">
+
+               <a href="home"><span><img src="logo/logo_tcorpandco.png" style="width: 7vh; position: relative; margin-top: -20px" ></span></a>
+
+            </div>
+          </div>
+
+          <div class="navbar-collapse collapse">
+
+            <div class="menu">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="home" class="active">Logiciels</a></li>
+                <li role="presentation"><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+                <li role="presentation"><a href="votreManif">Votre manif</a></li>
+				 <li role="presentation"><a href="communication">Communication</a></li>
+				 <li role="presentation"><a href="formations">Formations</a></li>
+                <li role="presentation"><a href="realisation">Réalisation</a></li>
+                <li role="presentation"><a href="contact">Contact</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+<!--   <div class="wow fadeIn" data-wow-offset="0" data-wow-delay="1s">
+        <div class="slider">
+          <div class="img-responsive">
+            <ul class="bxslider">
+              <li><img src="images/slider/slide1.jpg" alt="" /></li>
+              <li><img src="images/slider/slide2.jpg" alt="" /></li>
+              <li><img src="images/slider/slide3.jpg" alt="" /></li>
+
+            </ul>
+          </div>
+        </div>
+   </div>  -->
+
+
+
+
+ <!-- <div class="wow fadeIn" data-wow-offset="0" data-wow-delay="1s">
+
+    <div class="slider">
+      <div class="img-responsive">
+        <div class="bxslider">
+          <div>
+            <img src="images/slider/slide1.jpg" alt="" />
+
+            <div class="carousel-caption">
+
+                    <h2 class="animated bounceInDown" style="animation-delay: 2s;">INTEGRATEUR DE SOLUTIONS</h2>
+
+            </div>
+
+          </div>
+          <div>
+            <img src="images/slider/slide2.jpg" alt="" />
+          </div>
+          <div>
+           <img src="images/slider/slide3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+
+  <!-- Start WOWSlider.com BODY section -->
+  
+  <div id="wowslider-container1">
+
+    <div class="ws_images">
+      <ul>
+      <li><img src="data1/images/slide1.jpg" alt="" title="" id="wows1_0"/></li>
+      <li><a href=""><img src="data1/images/slide2.jpg" alt="jquery carousel slider" title="" id="wows1_1"/></a></li>
+      <li><img src="data1/images/slide3.jpg" alt="" title="" id="wows1_2"/></li>
+    </ul>
+    </div>
+
+    <div class="ws_bullets"><div>
+
+      <a href="#" title=""><span><img src="data1/tooltips/slide1.jpg" alt=""/>1</span></a>
+      <a href="#" title=""><span><img src="data1/tooltips/slide2.jpg" alt=""/>2</span></a>
+      <a href="#" title=""><span><img src="data1/tooltips/slide3.jpg" alt=""/>3</span></a>
+
+    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href=""></a></div>
+    <div class="ws_shadow"></div>
+  </div>
+
+  <script type="text/javascript" src="engine1/wowslider.js"></script>
+  <script type="text/javascript" src="engine1/script.js"></script>
+  <!-- End WOWSlider.com BODY section -->
+
+
+  <div class="container">
+    <div class="text-center">
+      <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.7s">
+
+        <h2>INTEGRATEUR DE SOLUTIONS</h2>
+
+      </div>
+      <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.8s">
+
+
+
+        <p>
+		  
+           TCORPANDCO est une entreprise spécialisée dans la conception de logiciels,
+progiciels et de site internet dynamique. Nous sommes prêts à vous accompagner pour la réalisation et la conception de tous vos projets multi-plateformes car TCORPANDCO c’est aussi le développement mobile (Android, iOS, Windows XE etc ...) et l’intelligence artificielle.
+
+           
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.5s">
+        <img src="images/7.jpg" class="img-responsive">
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.5s">
+        <img src="images/8.jpg" class="img-responsive">
+      </div>
+  </div>
+
+
+     <div id="separateur">
+
+	   <div class="text-center" style="margin-top: 15px">
+
+                <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.7s">
+
+                  <h2>LES SPECIALITES</h2>
+
+                </div>
+		 
+			<div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.8s" style="vertical-align: center">
+
+                  <p> Avec une expérience pratique, solide et maîtrisant les technologies les plus avancées du XXIe siècle, <br>
+
+                    nous sommes en mesure de satisfaire vos attentes en termes de présence web, <br>
+
+                    du conseils à l'implémentation de la technologie et la disponibilité des services.</p>
+
+                </div>
+
+          </div>
+     </div>
+
+
+  <!-- Portfolio Section -->
+
+
+              <section id="portfolio" >
+                <div class="container-fluid p-0">
+                  <div class="row no-gutters">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.7s">
+                      <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="images/specialite/siteweb.jpg" alt="" style="width: 100%">
+                        <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">
+                            Création de site internet
+                          </div>
+                          <div class="project-name">
+                            Offrez-vous le meilleur site internet à votre projet! <br> Une
+                            solution complète de création de site web professionnel,<br> optimisé
+                            et éditable en un clique de souris.
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.7s">
+                      <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="images/specialite/developement.jpg" alt="" style="width: 100%">
+                        <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">
+                            Développement web
+                          </div>
+                          <div class="project-name">
+                            Besoin d'une application web qui s'asapte à votre business? <br>
+                            Accessible en local, sur internet ou votre intranet?<br> Nous automatisons
+                            votre quotidien.
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
+                      <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="images/specialite/hebergement.jpg" alt="" style="width: 100%">
+                        <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">
+                            Hébergement web
+                          </div>
+                          <div class="project-name">
+                            Choisir une solution d'hébergement pro sans <br> contrainte ? C'est possible.<br>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.8s">
+                      <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="images/specialite/responsive.jpg" alt="" style="width: 100%">
+                        <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">
+                            Responsive design
+                          </div>
+                          <div class="project-name">
+                            Restez accessible de partout en pilotant votre site<br>
+                            web compatible sur support Mobile et Tablette.
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
+                      <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="images/specialite/java.jpg" alt="" style="width: 100%">
+                        <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">
+                            Application Java
+                          </div>
+                          <div class="project-name">
+                            ...
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.8s">
+                      <a class="portfolio-box" href="#">
+                        <img class="img-fluid" src="images/specialite/android.jpg" alt="" style="width: 100%">
+                        <div class="portfolio-box-caption p-3">
+                          <div class="project-category text-white-50">
+                            Application Android
+                          </div>
+                          <div class="project-name">
+                            ...
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+
+
+
+
+                <!--<div class="about-us">
+                  <div class="container">
+                    <div class="text-center">
+                      <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+                        <h3>What People Are</h3>
+                      </div>
+                      <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.6s">
+                        <h2>Saying About Us</h2>
+                      </div>
+                      <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
+                        <div class="col-md-3">
+                          <img src="images/about/man4.jpg" alt="">
+                          <h3>John Doe</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+                        </div>
+                      </div>
+
+                      <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
+                        <div class="col-md-3">
+                          <img src="images/about/man2.jpg" alt="">
+                          <h3>John Doe</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+                        </div>
+                      </div>
+
+                      <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+                        <div class="col-md-3">
+                          <img src="images/about/man3.jpg" alt="">
+                          <h3>John Doe</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+                        </div>
+                      </div>
+
+                      <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.6s">
+                        <div class="col-md-3">
+                          <img src="images/about/man4.jpg" alt="">
+                          <h3>John Doe</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+
+ 
+
+               <div class="box">
+
+                  <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.4s">
+                    <div class="col-sm-3 hidden-xs" style="float: left">
+                      <i class="fa fa-calendar fa-5x"></i>
+                      <h4>Planning</h4>
+                    </div>
+                  </div>
+                  <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.8s">
+                    <div class="col-sm-2 hidden-xs">
+                      <i class="fa fa-pencil fa-5x"></i>
+                      <h4>Design</h4>
+                    </div>
+                  </div>
+                  <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.2s">
+                    <div class="col-sm-2 hidden-xs">
+                      <i class="fa fa-html5 fa-5x"></i>
+                      <h4> Code </h4>
+                    </div>
+                  </div>
+                  <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.2s">
+                    <div class="col-sm-2 hidden-xs">
+                      <i class="fa fa-cogs fa-5x"></i>
+                      <h4> Test </h4>
+                    </div>
+                  </div>
+                  <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.6s">
+                    <div class="col-sm-3 hidden-xs">
+                      <i class="fa fa-rocket fa-5x"></i>
+                      <h4>Lancement</h4>
+                    </div>
+                  </div>
+                </div>
+
+    
+  
+
+
+
+
+    <!-- ====================  slide logo patner ========== -->
+
+         <!--       <div class="container">
+                  <div class="col-lg-12">
+                    <div class="text-center">
+                      <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+                        <h2>  Nos précieux clients </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             <div class="wow bounceInUp">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">  -->
+
+                  <!-- Wrapper for slides -->
+
+
+
+                          <!--        <div class="carousel-inner">
+
+                                          <div class="item active container">
+
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/moov.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/mtn.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/ldnio.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/atlantique.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/cie.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/sodeci.jpg" alt="..." style="height: 8vh">
+
+                                          </div>
+
+
+                                          <div class="item container">
+
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/moov.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/mtn.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/ldnio.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/atlantique.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/cie.jpg" alt="..." style="height: 8vh">
+                                          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/sodeci.jpg" alt="..." style="height: 8vh">
+
+                                          </div>
+
+                                  </div> -->
+
+          <!--        <div align="center" style="margin-top:20px;"> -->
+
+                    <!-- Controls -->
+                     <!--     <a class="left" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                    <a class="right" href="#carousel-example-generic" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                  </div>
+
+                </div>
+
+            </div>-->
+
+
+
+
+
+
+
+
+  <div class="features">
+    <div class="container">
+      <div class="text-center">
+        <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
+          <h2></h2>
+        </div>
+        <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
+          <p> <br></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+          <h2>TCORPANDCO</h2>
+          <p>Nous sommes une structure Multi-services dynamique disposée à vous aider et vous accompagner dans vos solutions.Nous sommes à votre disposition pour d'éventuelles informations et toujours prêt à vous servir.</p>
+
+          <ul class="social-network">
+
+            <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
+           <!-- <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li> -->
+
+          </ul>
+        </div>
+
+       
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+          <h3>CONTACT INFO</h3>
+          <ul>
+            <li><i class="fa fa-home fa-2x"></i>  Côte d'ivoire, Abidjan-angré 8ème tranche, djibi 1 non loin du carrefour Mandela </li>
+            <hr>
+            <li><i class="fa fa-phone fa-2x"></i>  +225 22 59 23 20 / 22 50 26 64 </li>
+            <hr>
+            <li><i class="fa fa-envelope fa-2x"></i>  services@tcorpandco.com </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4">
+            &copy; TCORP & CO. Tous droits réservés.
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Multi
+              -->
+            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+
+            </div>
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-8">
+			
+            <ul class="pull-right">
+			  
+              <li><a href="home">Logiciels</a></li>
+              <li><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+              <li><a href="votreManif">Votre manif</a></li>
+			  <li><a href="communication">Communication</a></li>
+			  <li><a href="formations">Formations</a></li>
+              <li><a href="realisation">Réalisation</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+			
+          </div>
+        </div>
+
+        <div class="pull-right">
+          <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réalisation</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- =======================================================
+    video player
+  ======================================================= -->
+
+  <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+
+     <!--==== add icon ======-->
+  <link rel="icon" type="text/css" href="logo/logo_votreManif.png">
+
+  <!-- =======================================================
+        logo slider
+  ======================================================= -->
+ <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
+
+
+
+
+<script>
+
+
+  $(document).ready(function(){
+    $('.customer-logos').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      }, {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
+    });
+  });
+
+  /* script slide logo */
+
+  $('.carousel').carousel()
+  
+  
+  /* video template */
+  
+  /*  $('#modal1').on('hidden.bs.modal', function (e) {
+  // do something...
+  $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
+    });
+
+  $('#modal6').on('hidden.bs.modal', function (e) {
+  // do something...
+  $('#modal6 iframe').attr("src", $("#modal6 iframe").attr("src"));
+   });
+
+$('#modal4').on('hidden.bs.modal', function (e) {
+  // do something...
+  $('#modal4 iframe').attr("src", $("#modal4 iframe").attr("src"));
+   });*/
+
+
+</script>
+
+  <style>
+
+    #my-video
+    {
+
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: 3%;
+      background-color: transparent;
+
+    }
+
+    .video
+    {
+      background-image: url("images/3418057.jpg");
+      /*padding-bottom: 0%;*/
+    }
+
+    /* slide logo */
+
+    .logo
+    {
+      filter: none; /* IE6-9 */
+      -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      transition: all .5s ease;
+      cursor:pointer;
+    }
+
+
+    .logo:hover
+    {
+      filter: gray; /* IE6-9 */
+      -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    }
+
+    .slide_logo
+    {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+    }
+	
+	
+	.video-fluid{
+	
+	        width: 100%;
+  height: auto;
+	}
+	
+	iframe{
+	
+	  margin: auto;
+	}
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+            <div class="navbar-brand">
+              <a href="galerie.html"><img src="logo/logo_votreManif.png" style="width: 5vh"></a>
+            </div>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <div class="menu">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="home">Logiciels</a></li>
+                <li role="presentation"><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+                <li role="presentation"><a href="votreManif">Votre manif</a></li>
+				 <li role="presentation"><a href="communication">Communication</a></li>
+				 <li role="presentation"><a href="formations">Formations</a></li>
+                <li role="presentation"><a href="galerie" class="active">Réalisation</a></li>
+                <li role="presentation"><a href="contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+   <section id="portfolio" class="wow bounceInRight" data-wow-offset="0" data-wow-delay="0.3s">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+            <h2>Projet</h2>
+          </div>
+          <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.6s">
+            <p> Votre manif dispose </p>
+          </div>
+        </div>
+
+
+        <ul class="portfolio-filter text-center">
+
+          <li><a class="btn btn-default active" href="#" data-filter="*"> Tout </a></li>
+          <li><a class="btn btn-default" href="#" data-filter=".mariage">Mariage - Dot</a></li>
+          <li><a class="btn btn-default" href="#" data-filter=".anniv"> Anniverssaire - Bapteme </a></li>
+          <li><a class="btn btn-default" href="#" data-filter=".shooting"> Shooting </a></li>
+          <li><a class="btn btn-default" href="#" data-filter=".crea"> Créa </a></li>
+
+        </ul>
+
+        <!--/#portfolio-filter-->
+
+        <div class="row">
+
+                  <div class="portfolio-items">
+
+                    <div class="portfolio-item shooting col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/shoot0.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_shoot0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!--/.portfolio-item-->
+
+                      <div class="portfolio-item shooting col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="images/portfolio/recent/shoot1.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="#"></a></h3>
+                              <p></p>
+                              <a class="preview" href="images/portfolio/full/full_shoot1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item shooting col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/shoot2.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_shoot2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item shooting col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/shoot3.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_shoot3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                      <!--/.portfolio-item-->
+
+                    <div class="portfolio-item mariage col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/mariage0.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_mariage0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--/.portfolio-item--> <!-- new -->
+
+                    <div class="portfolio-item crea col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/beauty0.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_beauty0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--/.portfolio-item--> <!-- new -->
+
+                    <div class="portfolio-item crea col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/casque0.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_casque0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--/.portfolio-item--> <!-- new -->
+
+                    <div class="portfolio-item crea col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/phone-girl0.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_phone-girl0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--/.portfolio-item--> <!-- new -->
+
+                    <div class="portfolio-item crea col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/safec.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_safec.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--/.portfolio-item--> <!-- new -->
+
+                    <div class="portfolio-item shooting col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/casting.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_casting0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--/.portfolio-item--> <!-- new -->
+
+                    <div class="portfolio-item anniv col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/anniv3.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_anniv3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--/.portfolio-item--> <!-- new -->
+
+                    <div class="portfolio-item shooting col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/produits-shooting0.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_produits-shooting0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--/.portfolio-item--> <!-- new -->
+
+                    <div class="portfolio-item crea col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/vetparis0.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_vetparis0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!--/.portfolio-item--> <!-- new -->
+
+                    <div class="portfolio-item crea col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/recrutement0.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_recrutement0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item mariage col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/mariage1.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_marage1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item anniv col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/anniv0.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_anniv0.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item mariage col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/mariage2.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_mariage2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item anniv  col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/anniv1.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_anniv1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item anniv col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/anniv2.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_anniv2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item mariage col-xs-12 col-sm-4 col-md-3">
+                      <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/mariage3.jpg" alt="">
+                        <div class="overlay">
+                          <div class="recent-work-inner">
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                            <a class="preview" href="images/portfolio/full/full_mariage3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Agrandir </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            <!--/.portfolio-item-->
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+  <!--/#portfolio-item-->
+
+ <!-- <hr> -->
+<!-- ======= add video =======-->
+
+  <section class="video">
+
+<div class="container">
+    <div class="col-lg-12">
+      <div class="text-center">
+        <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="1.2s">
+          <h2>Production vidéo</h2>
+        </div>
+        <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.6s">
+          <p>Votre manif dispose </p>
+        </div>
+      </div>
+    </div>
+</div>
+      <div class="col-xs-12 col-sm-12 col-md-12 wow bounceInLeft" data-wow-offset="0" data-wow-delay="0.7s">
+       <!-- <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                width="840"
+                height="500"
+                poster="video/icon.png"
+                data-setup="{}"
+         >
+            <source src="video/001.mp4" type="video/mp4" />
+            <source src="video/001.webm" type="video/webm" />
+                <p class="vjs-no-js">-->
+                    <!--To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that -->
+                   <!--   <a href="https://videojs.com/html5-video-support/" target="_blank"> </a>
+              </p>
+          </video> -->
+		
+	<!--	<div class="embed-responsive embed-responsive-16by9">
+     <iframe class="embed-responsive-item" src="video/001.mp4" allowfullscreen></iframe>
+             </div> -->
+      </div>
+
+  <!-- ==================================================  viedo template=================  ========== -->
+
+ <!-- <video class="video-fluid z-depth-1" autoplay loop controls muted>
+  <source src="video/001.mp4" type="video/mp4" />
+     </video> -->
+	<div class="container">
+	  <div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/YZ848mvL-ws" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/5qWfcS6WVM0" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>		
+	</div>
+	  
+	   <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/VkNo-HXAEwc" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WqQDPBEdnRs" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+	  </div>
+	  
+	   <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/TYMVxIzkstI" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/_50V93dlECo" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+       </div>
+	  
+	  </div>
+	 <!-- ==================================================  viedo template=================  ========== -->
+
+
+    <!-- ====================  slide logo patner ========== -->
+
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+            <h2>  Nos partenaires </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="wow bounceInUp">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+
+
+
+     <!--   <div class="carousel-inner">
+
+          <div class="item active container">
+
+            <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/moov.jpg" alt="..." style="height: 8vh">
+            <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/mtn.jpg" alt="..." style="height: 8vh">
+            <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/ldnio.jpg" alt="..." style="height: 8vh">
+            <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/atlantique.jpg" alt="..." style="height: 8vh">
+            <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/cie.jpg" alt="..." style="height: 8vh">
+            <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/sodeci.jpg" alt="..." style="height: 8vh">
+
+          </div>
+
+
+        <div class="item container">
+
+          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/moov.jpg" alt="..." style="height: 8vh">
+          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/mtn.jpg" alt="..." style="height: 8vh">
+          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/ldnio.jpg" alt="..." style="height: 8vh">
+          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/atlantique.jpg" alt="..." style="height: 8vh">
+          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/cie.jpg" alt="..." style="height: 8vh">
+          <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="partenaire/sodeci.jpg" alt="..." style="height: 8vh">
+
+        </div>
+
+      </div>  -->
+
+      <div align="center" style="margin-top:20px;">
+
+        <!-- Controls -->
+        <a class="left" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+
+    </div>
+
+</div>
+
+  </section>
+
+
+
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+          <h2>TCORPANDCO</h2>
+          <p>Nous sommes une structure Multi-services dynamique disposée à vous aider et vous accompagner dans vos solutions.Nous sommes à votre disposition pour d'éventuelles informations et toujours prêt à vous servir.</p>
+
+          <ul class="social-network">
+
+            <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
+           <!-- <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li> -->
+
+          </ul>
+        </div>
+
+       
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+          <h3>CONTACT INFO</h3>
+          <ul>
+            <li><i class="fa fa-home fa-2x"></i>  Côte d'ivoire, Abidjan-angré 8ème tranche, djibi 1 non loin du carrefour Mandela </li>
+            <hr>
+            <li><i class="fa fa-phone fa-2x"></i>  +225 22 59 23 20 / 22 50 26 64 </li>
+            <hr>
+            <li><i class="fa fa-envelope fa-2x"></i>  services@tcorpandco.com </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4">
+            &copy; TCORP & CO. Tous droits réservés.
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Multi
+              -->
+            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+
+            </div>
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-8">
+            <ul class="pull-right">
+              <li><a href="home">Logiciels</a></li>
+              <li><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+              <li><a href="votreManif">Votre manif</a></li>             
+			   <li><a href="communication">Communication</a></li>
+			   <li><a href="formations">Formations</a></li>
+			   <li><a href="galerie">Réalisation</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pull-right">
+          <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) Video -->
+  <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+
+</body>
+
+</html>

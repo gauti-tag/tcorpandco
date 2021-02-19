@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <!-- <meta name="viewport" content="width=device-width, user-scalable=no , shrink-to-fit=no"> -->
+   <meta name="viewport" content="width=device-width, user-scalable=no, shrink-to-fit=no">
+  <title>TCORP&CO</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!--<link rel="stylesheet" href="css/jquery.bxslider.css">-->
+  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- animation -->
+ 
+
+        <!--==== add icon ======-->
+  <link rel="icon" type="text/css" href="logo/logo_tcorpandco.png">
+
+
+  <!-- Start WOWSlider.com HEAD section
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+   End WOWSlider.com HEAD section -->
+
+
+
+  
+
+   <style>
+
+     /* slide logo */
+
+     .logo
+     {
+       filter: none; /* IE6-9 */
+       -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+       -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+       -ms-transition: all .5s ease;
+       transition: all .5s ease;
+       cursor:pointer;
+     }
+
+
+     .logo:hover
+     {
+       filter: gray; /* IE6-9 */
+       -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+     }
+
+     .slide_logo
+     {
+       margin-right: auto;
+       margin-left: auto;
+       display: block;
+     }
+
+
+    #portfolio .container-fluid {
+       width: 100%;
+       padding: 0;
+       margin: 0;
+     }
+
+     @media only screen and (max-width: 800px) {
+       #portfolio .container-fluid {
+         margin-top: -50px;
+       }
+     }
+	 
+	 
+	  @media only screen and (min-width: 2100px) {
+       #portfolio .container-fluid {
+		 /* margin-top: 50px;*/
+       }
+     }
+
+     #portfolio .container-fluid .portfolio-box {
+       position: relative;
+       display: block;
+       margin: 0;
+       padding: 0;
+     }
+     #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       bottom: 0;
+       text-align: center;
+       opacity: 0;
+       color: #fff;
+       background: darkred;
+       transition: opacity 0.25s ease;
+
+     }
+
+     #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+       font-size: 2rem;
+       font-weight: 600;
+       text-transform: uppercase;
+     }
+	 
+	  @media only screen and (max-width: 800px) {
+	   
+        #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+		 
+        font-size: 1.2rem;
+		 
+       }
+	   
+     }
+
+     #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+       font-size: 1.6rem;
+     }
+
+     #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+       opacity: 0.9;
+     }
+
+     #portfolio .container-fluid .portfolio-box
+     {
+        width: 100%;
+     }
+
+	 
+	   .block{
+
+         padding: 0;
+         margin: 0;
+
+     }
+
+     .modal{
+       background: rgba(0, 0, 0, 0.9);
+   /*    z-index: 99999;
+       opacity:0;
+       -webkit-transition: opacity 100ms ease-in;
+       -moz-transition: opacity 100ms ease-in;
+       transition: opacity 100ms ease-in;*/
+     }
+
+     .modal-title{
+
+       text-transform: uppercase;
+       text-align: center;
+       font-size: 20px;
+       border-left: 2px solid;
+
+     }
+
+     .contentslider img{
+
+       width: 100%;
+       margin: 0;
+	   padding: 0;
+     }
+
+     .contentslider{
+
+	   width: 100%;
+       margin: 0;
+	   padding: 0;
+
+     }
+
+     .bx-wrapper{
+
+       -moz-box-shadow: none !important;
+       -webkit-box-shadow: none !important;
+       box-shadow: none !important;
+       border: 0 !important;
+
+     }
+
+     #solution{
+       background: repeating-radial-gradient(circle at top, #243B55, #bdc3c7, #2c3e50);
+       -webkit-background-clip: text;
+       color: transparent;
+       font-size: 5rem;
+       font-family: sans-serif;
+     }
+
+     @media screen and (max-width: 800px ) {
+
+              #solution{
+
+                font-size: 2rem;
+
+              }
+     }
+
+     #vente{
+       background: repeating-radial-gradient(circle at top, #e70021, #ffe238);
+       -webkit-background-clip: text;
+       color: transparent;
+       font-size: 5rem;
+       font-family: sans-serif;
+     }
+
+     @media screen and (max-width: 800px ) {
+
+       #vente{
+
+         font-size: 2rem;
+
+       }
+     }
+
+     #manif{
+
+       background: repeating-radial-gradient(circle at center, #F3904F, #3B4371, #f8b500);
+       -webkit-background-clip: text;
+       color: transparent;
+       font-size: 5rem;
+       font-family: sans-serif;
+
+     }
+     @media screen and (max-width: 800px ) {
+
+       #manif{
+
+         font-size: 2rem;
+
+       }
+     }
+     #com {
+
+       background: repeating-radial-gradient(circle at top,#304352,#283048, #d7d2cc);
+       -webkit-background-clip: text;
+       color: transparent;
+       font-size: 5rem;
+       font-family: sans-serif;
+
+     }
+     @media screen and (max-width: 800px ) {
+
+       #com{
+
+         font-size: 2rem;
+
+       }
+     }
+
+     #formation{
+
+       background: repeating-radial-gradient(circle at bottom, #56B4D3, #02AAB0, #2980b9);
+       -webkit-background-clip: text;
+       color: transparent;
+       font-size: 5rem;
+       font-family: sans-serif;
+
+     }
+     @media screen and (max-width: 800px ) {
+
+       #formation{
+
+         font-size: 2rem;
+
+       }
+     }
+     .space{
+
+       color: white;
+       height: 15px;
+
+     }
+     @media screen and (max-width: 800px) {
+        .space{
+          
+          height: auto;
+
+        }
+
+     }
+
+ /*    @media screen and (max-width: 900px){
+
+          #portfolio{
+
+                margin-top: auto;
+
+          }
+
+
+     }*/
+
+     .img{
+
+          width: 100px;
+     }
+
+     @media screen and (max-width: 800px){
+
+          .img{
+
+            width: 50px;
+            margin-right: 0;
+
+          }
+
+     }
+
+     .divImg{
+
+
+          margin-right: 20px;
+
+     }
+
+     @media screen and (max-width: 800px) {
+
+          .divImg{
+
+            /*  margin-right: -40px;*/
+              display: inline-flex;
+
+
+                flex-basis: auto;
+
+            }
+     }
+
+     .titreImg{
+
+         text-transform: uppercase;
+	     text-align : center;
+
+
+     }
+
+     @media screen and (max-width: 800px) {
+
+        .titreImg{
+
+          visibility: hidden;
+		  font-size: 0.1rem;
+
+        }
+
+     }
+	 
+	  @media only screen and (max-width: 800px){
+
+   .clients{
+
+     margin-top: -40px;
+     font-size: 2.6rem;
+
+   }
+
+ }
+
+
+
+   </style>
+
+</head>
+
+<body style="padding: 0; margin: 0">
+<header>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+
+    <div class="navigation">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+
+          <div class="navbar-brand">
+
+			<a href="home"><img class="img-responsive" src="logo/logo_tcorpandco.png" style="width: 7vh; position: relative; margin-top: -20px"></a>
+
+          </div>
+        </div>
+
+        <div class="navbar-collapse collapse">
+
+          <div class="menu">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation"><a href="home" class="active">Logiciels</a></li>
+              <li role="presentation"><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+              <li role="presentation"><a href="votreManif">Votre manif</a></li>
+              <li role="presentation"><a href="communication">Communication</a></li>
+              <li role="presentation"><a href="formations">Formations</a></li>
+              <li role="presentation"><a href="realisation">Réalisation</a></li>
+              <li role="presentation"><a href="contact">Contact</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+ <div class="space"></div>
+
+  <div align="center" class="contentslider" style="margin-top: -20px;">
+
+	<div class="sliderNew" style="width: 100%">
+	  
+      <div style="width: 100%"><a href="home.html"><img src="images/slider/intégrateur.jpg" title="INTEGRATEUR DE SOLUTIONS" /></a></div>
+      <div style="width: 100%"><a href="https://www.vetparis.net/" target="_blank"><img src="images/slider/vetparis.jpg" alt="" title="BOUTIQUE EN LIGNE" /></a></div>
+      <div style="width: 100%"><a href="votreManif.html"><img src="images/slider/votremanif.jpg" alt="" title="VOTRE MANIF" /></a></div>
+      <div style="width: 100%"><a href="communication.html"><img src="images/slider/communication.jpg" alt="" title="COMMUNICATION" /></a></div>
+      <div style="width: 100%"><a href="formations_new.html"><img src="images/slider/formation.jpg" alt="" title="FORMATIONS" /></a></div>
+
+
+    </div>
+
+  </div>
+
+  <script>
+
+    $(function () {
+
+      $('.sliderNew').bxSlider({
+
+        auto: true,
+        mode: 'horizontal',
+        captions: false,
+      /*autoHover: true,*/
+        pager: false,
+        controls: false,
+		
+
+      });
+
+    })
+  </script>
+
+<div class="space"></div>
+
+<div class="container" class="sujet">
+
+  <div class="row">
+
+    <div class="description_slide" style="text-align: center;">
+
+      <div class="text_info" style="height: auto">
+
+              <div align="center">
+				
+                <h2 id="solution">INTEGRATEUR DE SOLUTIONS</h2>
+				
+              </div>
+
+              <div align="center" style="display: inline-flex" class="hidden-xs">
+
+                <div align="center" style="display: inline-table" class="divImg">
+                     <img src="images/icon/integrateur/JAVA.png" class="img-responsive img" style="">
+                     <h5 class="titreImg"><b>java</b></h5>
+                  </div>s
+                <div align="center" style="display: inline-table" class="divImg">
+                    <img  src="images/icon/integrateur/PHP.png" class="img-responsive img" style="">
+                    <h5 class="titreImg"><b>php</b></h5>
+                </div>
+                  <div align="center" style="display: inline-table" class="divImg">
+                    <img src="images/icon/integrateur/ANDROID.png" class="img-responsive img" style="">
+                    <h5 class="titreImg"><b>android</b></h5>
+                  </div>
+                    <div align="center" style="display: inline-table" class="">
+                    <img  src="images/icon/integrateur/OSX.png" class="img-responsive img" style="">
+                      <h5 class="titreImg"><b>ios</b></h5>
+                    </div>
+
+              </div>
+
+        </div>
+
+      <div class="text_info" style="height: auto">
+
+        <div class="center">
+            <h2 id="vente">BOUTIQUE EN LIGNE</h2>
+          </div>
+
+     <!--   <div align="center" style="display: inline-flex">
+
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img src="images/icon/boutique/phone.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>connecter</b></h5>
+          </div>
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img  src="images/icon/boutique/liste.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>choisir</b></h5>
+          </div>
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img src="images/icon/boutique/wallet.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>livraison</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="">
+            <img  src="images/icon/boutique/happy.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>satisfaction</b></h5>
+          </div>
+
+        </div>  -->
+        <div align="center" style="display: inline-flex" class="hidden-xs">
+
+          <div align="center" style="display: inline-table" class="divImg">
+            <img src="images/icon/boutique/phone.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>connecter</b></h5>
+          </div>s
+          <div align="center" style="display: inline-table" class="divImg">
+            <img  src="images/icon/boutique/liste.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>choisir</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="divImg">
+            <img src="images/icon/boutique/wallet.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>livraison</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="">
+            <img  src="images/icon/boutique/happy.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>satisfaction</b></h5>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="text_info" style="height: auto">
+        <div class="center">
+        <h2 id="manif">VOTRE MANIF</h2>
+        </div>
+
+      <!--  <div align="center" style="display: inline-flex">
+
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img src="images/icon/manif/photo.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>Photographie</b></h5>
+          </div>
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img  src="images/icon/manif/camera.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>video</b></h5>
+          </div>
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img src="images/icon/manif/imgage.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>contenu</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="">
+            <img  src="images/icon/manif/pelicule.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>Production</b></h5>
+          </div>
+
+        </div>  -->
+
+        <div align="center" style="display: inline-flex" class="hidden-xs">
+
+          <div align="center" style="display: inline-table" class="divImg">
+            <img src="images/icon/manif/photo.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>Photographie</b></h5>
+          </div>s
+          <div align="center" style="display: inline-table" class="divImg">
+            <img  src="images/icon/manif/camera.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>video</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="divImg">
+            <img src="images/icon/manif/imgage.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>contenu</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="">
+            <img  src="images/icon/manif/pelicule.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>Production</b></h5>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="text_info" style="height: auto">
+        <div class="center">
+        <h2 id="com">COMMUNICATION</h2>
+        </div>
+
+     <!--   <div align="center" style="display: inline-flex">
+
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img src="images/icon/com/audit.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>audit</b></h5>
+          </div>
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img  src="images/icon/com/event.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>evenementiel</b></h5>
+          </div>
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img src="images/icon/com/content.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>Contenu</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="">
+            <img  src="images/icon/com/marketing.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>marketing</b></h5>
+          </div>
+
+        </div> -->
+
+        <div align="center" style="display: inline-flex" class="hidden-xs">
+
+          <div align="center" style="display: inline-table" class="divImg">
+            <img src="images/icon/com/audit.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>audit</b></h5>
+          </div>s
+          <div align="center" style="display: inline-table" class="divImg">
+            <img  src="images/icon/com/event.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>evenementiel</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="divImg">
+            <img src="images/icon/com/content.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>Contenu</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="">
+            <img  src="images/icon/com/marketing.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>marketing</b></h5>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="text_info" style="height: auto">
+        <div class="center">
+        <h2 id="formation">FORMATIONS</h2>
+        </div>
+
+      <!--  <div align="center" style="display: inline-flex">
+
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img src="images/icon/formation/new/photoshop.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>Photoshop</b></h5>
+          </div>
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img  src="images/icon/formation/new/after-effect.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>after effect</b></h5>
+          </div>
+          <div align="center" style="display: inline-table;" class="divImg">
+            <img src="images/icon/formation/new/premiere-pro.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>premiere pro</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="">
+            <img  src="images/icon/formation/new/illustrator.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>illustrator</b></h5>
+          </div>
+
+        </div> -->
+
+        <div align="center" style="display: inline-flex" class="hidden-xs">
+
+          <div align="center" style="display: inline-table" class="divImg">
+            <img src="images/icon/formation/new/photoshop.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>Photoshop</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="divImg">
+            <img  src="images/icon/formation/new/after-effect.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>after effect</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="divImg">
+            <img src="images/icon/formation/new/premiere-pro.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>premiere pro</b></h5>
+          </div>
+          <div align="center" style="display: inline-table" class="">
+            <img  src="images/icon/formation/new/illustrator.png" class="img-responsive img" style="">
+            <h5 class="titreImg"><b>illustrator</b></h5>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+  <script>
+
+    $(function () {
+
+      $('.description_slide').bxSlider({
+
+        auto: true,
+        mode: 'fade',
+        controls: false,
+        pager: false,
+
+        wrapperClass: 'bx-wrapper',
+
+
+      });
+    })
+  </script>
+  <div class="space"></div>
+
+ <div class="modal fade" id="exampleModal" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">création de site web</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <div>
+               <img src="images/specialite/siteweb.jpg" class="img-responsive">
+           </div>
+          <p style="color: black; margin: 20px" align="left">Face aux technologies qui changent, aux attentes des utilisateurs de plus en plus fortes et à la nécessité de proposer un bon site web, Tcorp and Co se positionne comme un acteur essentiel de votre transformation digitale.</p>
+          <p style="color: black; margin: 20px" align="left">Nous vous accompagnons au travers de nos différentes compétences pour répondre à vos problématiques avec une méthodologie éprouvée et des solutions adaptés aux exigences d’aujourd’hui. </p>
+        </div>
+        <div class="modal-footer">
+
+          <a type="button" class="btn btn-primary" style="background-color: #3a87ad" href="contact.html">Contacter nous</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModa2" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabe2" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabe2">Developpement web</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img src="images/specialite/developement.jpg" class="img-responsive">
+          </div>
+          <p style="color: black; margin: 20px" align="left">Pour la plupart des projets d’application web et mobile notre engagement est totale avec la mise à disposition d’une équipe de développeurs et designers aux talents pointus qui œuvrent à la réalisation en phase avec votre cahier de charge et vous accompagnent jusqu’aux différents test utilisateurs.</p>
+          <p style="color: black; margin: 20px" align="left">Démarrer sans plus attendre votre première application avec un service disposé et à votre écoute.</p>
+
+        </div>
+        <div class="modal-footer">
+
+          <a type="button" class="btn btn-primary" style="background-color: #3a87ad" href="contact.html">Contacter nous</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModa3" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabe3" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabe3">Developpement web</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img src="images/specialite/hebergement.jpg" class="img-responsive">
+          </div>
+          <p style="color: black; margin: 20px" align="left">L'hébergement d'un site web est capital, car il garantit la disponibilité et la visibilité du site. Une bonne offre d'hébergement intégrant des éléments de sécurité est ce que nous proposons à tous nos clients.</p>
+          <p style="color: black; margin: 20px" align="left">En optant pour un hébergement sécurisé à travers nos offres uniques, vous garantissez la sécurité de vos données et de votre site. </p>
+          <p style="color: black; margin: 20px" align="left">Ce dernier jouira d'une infrastructure plus robuste en profitant des outils de protection que nous mettons à disposition.</p>
+        </div>
+        <div class="modal-footer">
+
+          <a type="button" class="btn btn-primary" style="background-color: #3a87ad" href="contact.html">Contacter nous</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModa4" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabe4" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabe4">Responsive design</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img src="images/specialite/responsive.jpg" class="img-responsive">
+          </div>
+          <p style="color: black; margin: 20px" align="left">Presque tout le monde aujourd’hui se connecte à internet pour avoir accès à différents services en ligne. En atterrissant sur votre site, un utilisateur décide en quelques secondes d’y passer du temps en allant au bout de sa quête.</p>
+          <p style="color: black; margin: 20px" align="left">Pour ce faire, l’utilisateur n’est pas nécessairement assis devant un ordinateur de bureau, il peut aussi utiliser un smartphone, une tablette ou un ordinateur portable ce qui arrive de plus en plus fréquemment.</p>
+          <p style="color: black; margin: 20px" align="left">Il est dommage qu’un client interrompe sa visite en raison du manque de facilité d’utilisation et de lisibilité. Les différents terminaux nécessitent donc un ajustement de votre site Web selon les différentes tailles d’écran. </p>
+          <p style="color: black; margin: 20px" align="left">A ce stade vous n’avez pas à craindre que cela demande un travail de programmation insurmontable, Ne vous inquiétez pas ! Nos solution web comportent toujours une version adaptative ou Responsive.</p>
+        </div>
+        <div class="modal-footer">
+
+          <a type="button" class="btn btn-primary" style="background-color: #3a87ad" href="contact.html">Contacter nous</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModa5" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabe5" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabe5">Application Java</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img src="images/specialite/java.jpg" class="img-responsive">
+          </div>
+          <p style="color: black; margin: 20px" align="left">Créer des applications web évolutives et des interfaces de programmes mobiles intelligents avec la technologie java.</p>
+          <p style="color: black; margin: 20px" align="left">Nous réalisons vos projets d’applications très abouties et modernes.</p>
+        </div>
+        <div class="modal-footer">
+
+          <a type="button" class="btn btn-primary" style="background-color: #3a87ad" href="contact.html">Contacter nous</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModa6" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabe6" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabe6">Application Android</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img src="images/specialite/android.jpg" class="img-responsive">
+          </div>
+
+          <p style="color: black; margin: 20px" align="left">Avez vous une idée porteuse ? Voulez vous la faire naitre comme application Android ? C'est Génial.</p>
+          <p style="color: black; margin: 20px" align="left">Nous disposons d'une équipe dédiée pour rendre votre projet unique en suivant votre cahier de charge à la lettre jusqu’au test et la mise en ligne sur les stores.</p>
+
+
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-primary"style="background-color: #3a87ad" href="contact.html">Contacter nous</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Section -->
+  
+  
+  <section id="portfolio" class="hidden-xs" style="margin-top: 40px; padding: 0">
+
+                <div class="container-fluid" style="margin: 0; padding: 0">
+
+                  <div class="row" style="margin: 0; padding: 0">
+
+                        <div class="col-sm-4 col-md-4 col-lg-4 wow fadeInLeft block" data-wow-offset="0" data-wow-delay="0.7s">
+
+                          <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <img  class="img-responsive" src="images/specialite/siteweb.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                           <div class="project-category text-white-50">
+
+                                Création de site internet
+
+                              </div><div class="project-name">
+                               <p>En savoir plus ...</p>
+
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-lg-4 wow fadeInDown block" data-wow-offset="0" data-wow-delay="0.7s">
+                          <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa2">
+                            <img class="img-responsive" src="images/specialite/developement.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">
+                                Développement web
+                              </div>
+                              <div class="project-name">
+                                <p>En savoir plus ...</p>
+
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 wow fadeInRight block" data-wow-offset="0" data-wow-delay="0.9s">
+                      <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa3">
+                        <img class="img-responsive" src="images/specialite/hebergement.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">
+                            Héberement sites web
+                          </div>
+                          <div class="project-name">
+
+                            <p>En savoir plus ...</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                   </div>
+
+                  <div class="row" style="margin: 0; padding: 0">
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 wow fadeInLeft block" data-wow-offset="0" data-wow-delay="0.8s">
+                      <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa4">
+                        <img class="img-responsive" src="images/specialite/responsive.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">
+                            Responsive design
+                          </div>
+                          <div class="project-name">
+                            <p>En savoir plus ...</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 wow fadeInUp block" data-wow-offset="0" data-wow-delay="0.9s">
+                      <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa5">
+                        <img class="img-responsive" src="images/specialite/java.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">
+                            Application Java
+                          </div>
+                          <div class="project-name">
+                            <p>En savoir plus ...</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 wow fadeInRight block" data-wow-offset="0" data-wow-delay="0.8s">
+                      <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa6">
+                        <img class="img-responsive" src="images/specialite/android.jpg" alt="">
+                        <div class="portfolio-box-caption p-3">
+                          <div class="project-category text-white-50">
+                            Application Android
+                          </div>
+                          <div class="project-name">
+                            <p>En savoir plus ...</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+
+                  </div>
+                </div>
+              </section>
+
+
+ <section id="portfolio" class="hidden-lg hidden-md hidden-sm">
+
+   <div class="container-fluid">
+
+     <div class="row">
+
+       <div class="col-xs-6 wow fadeInLeft block" data-wow-offset="0" data-wow-delay="0.7s">
+
+         <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModal">
+           <img  class="img-responsive" src="images/specialite/siteweb.jpg" alt="">
+           <div class="portfolio-box-caption">
+             <div class="project-category text-white-50">
+
+               Création de site internet
+
+             </div><div class="project-name">
+             <p>En savoir plus ...</p>
+
+           </div>
+           </div>
+         </a>
+       </div>
+
+       <div class="col-xs-6 wow fadeInDown block" data-wow-offset="0" data-wow-delay="0.7s">
+         <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa2">
+           <img class="img-responsive" src="images/specialite/developement.jpg" alt="">
+           <div class="portfolio-box-caption">
+             <div class="project-category text-white-50">
+               Développement web
+             </div>
+             <div class="project-name">
+               <p>En savoir plus ...</p>
+
+             </div>
+           </div>
+         </a>
+       </div>
+     </div>
+
+     <div class="row">
+
+       <div class="col-xs-6 wow fadeInRight block" data-wow-offset="0" data-wow-delay="0.9s">
+         <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa3">
+           <img class="img-responsive" src="images/specialite/hebergement.jpg" alt="">
+           <div class="portfolio-box-caption">
+             <div class="project-category text-white-50">
+               Héberement sites web
+             </div>
+             <div class="project-name">
+
+               <p>En savoir plus ...</p>
+             </div>
+           </div>
+         </a>
+       </div>
+
+
+
+       <div class="col-xs-6  wow fadeInLeft block" data-wow-offset="0" data-wow-delay="0.8s">
+         <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa4">
+           <img class="img-responsive" src="images/specialite/responsive.jpg" alt="">
+           <div class="portfolio-box-caption">
+             <div class="project-category text-white-50">
+               Responsive design
+             </div>
+             <div class="project-name">
+               <p>En savoir plus ...</p>
+             </div>
+           </div>
+         </a>
+       </div>
+
+     </div>
+
+     <div class="row">
+
+
+
+             <div class="col-xs-6 wow fadeInUp block" data-wow-offset="0" data-wow-delay="0.9s">
+               <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa5">
+                 <img class="img-responsive" src="images/specialite/java.jpg" alt="">
+                 <div class="portfolio-box-caption">
+                   <div class="project-category text-white-50">
+                     Application Java
+                   </div>
+                   <div class="project-name">
+                     <p>En savoir plus ...</p>
+                   </div>
+                 </div>
+               </a>
+             </div>
+
+
+             <div class="col-xs-6 wow fadeInRight block" data-wow-offset="0" data-wow-delay="0.8s">
+               <a class="portfolio-box" href="#" data-toggle="modal" data-target="#exampleModa6">
+                 <img class="img-responsive" src="images/specialite/android.jpg" alt="">
+                 <div class="portfolio-box-caption p-3">
+                   <div class="project-category text-white-50">
+                     Application Android
+                   </div>
+                   <div class="project-name">
+                     <p>En savoir plus ...</p>
+                   </div>
+                 </div>
+               </a>
+             </div>
+
+
+     </div>
+   </div>
+ </section>
+
+
+
+
+
+                <!--<div class="about-us">
+                  <div class="container">
+                    <div class="text-center">
+                      <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+                        <h3>What People Are</h3>
+                      </div>
+                      <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.6s">
+                        <h2>Saying About Us</h2>
+                      </div>
+                      <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
+                        <div class="col-md-3">
+                          <img src="images/about/man4.jpg" alt="">
+                          <h3>John Doe</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+                        </div>
+                      </div>
+
+                      <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
+                        <div class="col-md-3">
+                          <img src="images/about/man2.jpg" alt="">
+                          <h3>John Doe</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+                        </div>
+                      </div>
+
+                      <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+                        <div class="col-md-3">
+                          <img src="images/about/man3.jpg" alt="">
+                          <h3>John Doe</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+                        </div>
+                      </div>
+
+                      <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.6s">
+                        <div class="col-md-3">
+                          <img src="images/about/man4.jpg" alt="">
+                          <h3>John Doe</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+
+ 
+
+                <div class="box">
+
+                  <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.4s">
+                    <div class="col-sm-3 hidden-xs" style="float: left">
+                      <i class="fa fa-calendar fa-5x"></i>
+                      <h4>Planning</h4>
+                    </div>
+                  </div>
+                  <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.8s">
+                    <div class="col-sm-2 hidden-xs">
+                      <i class="fa fa-pencil fa-5x"></i>
+                      <h4>Design</h4>
+                    </div>
+                  </div>
+                  <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.2s">
+                    <div class="col-sm-2 hidden-xs">
+                      <i class="fa fa-html5 fa-5x"></i>
+                      <h4> Code </h4>
+                    </div>
+                  </div>
+                  <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.2s">
+                    <div class="col-sm-2 hidden-xs">
+                      <i class="fa fa-cogs fa-5x"></i>
+                      <h4> Test </h4>
+                    </div>
+                  </div>
+                  <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.6s">
+                    <div class="col-sm-3 hidden-xs">
+                      <i class="fa fa-rocket fa-5x"></i>
+                      <h4>Lancement</h4>
+                    </div>
+                  </div>
+                </div>
+
+    
+  
+
+
+
+
+    <!-- ====================  slide logo patner ========== -->
+
+               <div class="container">
+                 <div class="text-center">
+                   <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+                     <h2 class="clients">  Nos servives associés </h2>
+                   </div>
+                 </div>
+                    <div class="text-center">
+                        <div align="center"  class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.9s">
+                           <img src="logo/logo-mix.png" class="img-responsive" style="padding: 0; margin: 0">
+                        </div>
+                    </div>
+               </div>
+
+
+<footer style="width: 100%">
+  <div class="footer">
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+        <h2>TCORPANDCO</h2>
+        <p>Nous sommes une structure Multi-services dynamique disposée à vous aider et vous accompagner dans vos solutions.Nous sommes à votre disposition pour d'éventuelles informations et toujours prêt à vous servir.</p>
+
+        <ul class="social-network">
+
+          <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+          <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
+          <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
+          <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
+          <!-- <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li> -->
+
+        </ul>
+      </div>
+
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+        <h3>CONTACT INFO</h3>
+        <ul>
+          <li><i class="fa fa-home fa-2x"></i>  Côte d'ivoire, Abidjan-angré 8ème tranche, djibi 1 non loin du carrefour Mandela </li>
+          <hr>
+          <li><i class="fa fa-phone fa-2x"></i>  +225 22 59 23 20 / 22 50 26 64 </li>
+          <hr>
+          <li><i class="fa fa-envelope fa-2x"></i>  services@tcorpandco.com </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          &copy; TCORP & CO. Tous droits réservés.
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Multi
+            -->
+            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8">
+
+          <ul class="pull-right">
+
+            <li><a href="home">Logiciels</a></li>
+            <li><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+            <li><a href="votreManif">Votre manif</a></li>
+            <li><a href="communication">Communication</a></li>
+            <li><a href="formations">Formations</a></li>
+            <li><a href="realisation">Réalisation</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="pull-right">
+        <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Contact</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- =======================================================
+   
+  ======================================================= -->
+
+            <!--==== add icon ======-->
+  <link rel="icon" type="text/css" href="logo/logo_tcorpandco.png">
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" id="fix">
+      <div class="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+            <div class="navbar-brand">
+                <a href="home"><img class="img-responsive" src="logo/logo_tcorpandco.png" style="width: 7vh; position: relative; margin-top: -20px"></a>
+            </div>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <div class="menu">
+              <ul class="nav nav-tabs" role="tablist">
+              <li><a href="home">Logiciels</a></li>
+              <li><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+              <li><a href="votreManif">Votre manif</a></li>
+			  <li><a href="communication">Communication</a></li>
+			  <li><a href="formations">Formations</a></li>
+              <li><a href="realisation">Réalisation</a></li>
+              <li><a href="contact" class="active">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="contact">
+    <div class="container">
+      <div class="text-center">
+        <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+          <h2>Contactez nous</h2>
+        </div>
+        <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.6s">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-7 wow flip hidden-xs hidden-ms" data-wow-delay="0.7s" data-wow-offset="0">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.5112056127781!2d-3.979256287462563!3d5.403313436667337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc193a8c9c94911%3A0xaa26ba5e4f33aea5!2sTCORP%20AND%20CO!5e0!3m2!1sfr!2sci!4v1584957749284!5m2!1sfr!2sci" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <div class="col-xs-12 col-sm-12 col-md-5 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.7">
+        <h2>TCORP AND CO</h2>
+        <h3></h3>
+        <p>Nous somme une structure Multi-services dynamique disposée à vous aider et vous accompagner dans vos solutions.Nous sommes à votre disposition pour d'éventuelles informations et toujours prêt à vous servir.</p>
+        <ul>
+          <li><i class="fa fa-home fa-2x"></i> Côte d'ivoire, Abidjan-angré 8ème tranche, djibi 1 non loin du carrefour Mandela</li>
+          <li><i class="fa fa-phone fa-2x"></i> +225 22 59 23 20 / 22 50 26 64  </li>
+          <li><i class="fa fa-envelope fa-2x"></i> services@tcorpandco.com </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form">
+
+    <div class="container">
+
+      <div class="col-md-8 col-md-offset-2">
+
+        <div id="sendmessage">Your message has been sent. Thank you!</div>
+
+        <div id="errormessage"></div>
+
+        <form action="traitement.php" method="POST" role="form" class="contactForm">
+
+                  <div class="form-group">
+
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Entrer 4 charactères au minimum svp" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" data-rule="email" data-msg="Entrer un email valide svp" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Entrer 8 charactères au minimum svp" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Svp dites nous quelque chose" placeholder="Message"></textarea>
+                      <div class="validation"></div>
+                    </div>
+
+                               <input type="submit" name="envoyer" style="background-color: #3a87ad" class="btn btn-primary btn-lg" value="Envoyer" />
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+          <h2>TCORPANDCO</h2>
+          <p>Nous sommes une structure Multi-services dynamique disposée à vous aider et vous accompagner dans vos solutions.Nous sommes à votre disposition pour d'éventuelles informations et toujours prêt à vous servir.</p>
+
+          <ul class="social-network">
+
+            <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
+           <!-- <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li> -->
+
+          </ul>
+        </div>
+
+       
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+          <h3>CONTACT INFO</h3>
+          <ul>
+            <li><i class="fa fa-home fa-2x"></i>  Côte d'ivoire, Abidjan-angré 8ème tranche, djibi 1 non loin du carrefour Mandela </li>
+            <hr>
+            <li><i class="fa fa-phone fa-2x"></i>  +225 22 59 23 20 / 22 50 26 64 </li>
+            <hr>
+            <li><i class="fa fa-envelope fa-2x"></i>  services@tcorpandco.com </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4">
+            &copy; TCORP & CO. Tous droits réservés.
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Multi
+              -->
+            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+
+            </div>
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-8">
+            <ul class="pull-right">
+              <li><a href="home">Logiciels</a></li>
+              <li><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+              <li><a href="votreManif">Votre manif</a></li>
+			  <li><a href="communication">Communication</a></li>
+			  <li><a href="formations">Formations</a></li>
+              <li><a href="realisation">Réalisation</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pull-right">
+          <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>

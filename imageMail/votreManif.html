@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Votre Manif</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+
+
+  <!-- =======================================================
+
+  ======================================================= -->
+
+
+         <!--==== add icon ======-->
+  <link rel="icon" type="text/css" href="logo/logo_votreManif.png">
+
+  <style>
+
+    #form{
+      overflow-y: scroll;
+      width: 80%;
+      height: 45rem;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 3%;
+    }
+
+    table{
+
+      margin: auto;
+      color: black;
+     /* width: 80%;
+      height: 50%;*/
+
+    }
+    #titre
+    {
+      width: 67%;
+      margin: auto;
+      color: black;
+      text-align: left;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+
+
+
+
+    th , td {
+      padding: 7px 10px 10px 10px;
+    }
+
+    th{
+
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 18px;
+      border-bottom: 2px solid #111111;
+      border-top: 1px solid #999;
+      text-align: left;
+
+    }
+
+    tr.even{
+
+      background-color: #efefef;
+
+    }
+     tr:hover{
+
+     /* background-color: #428cac;
+       opacity: 0.9;*/
+
+    }
+    .money{
+
+      text-align: right;
+
+    }
+
+    td.empty{
+      border: 1px solid #0088dd;
+      padding: 15px;
+    }
+    td.hidden{
+      empty-cells: hide;
+    }
+
+    td.gaps{
+
+      background-color: #0088dd;
+      padding: 15px;
+      border: 2px solid #000000;
+    }
+
+    table.two{
+
+      border-spacing: 5px 15px;
+    }
+
+  img.banniere
+  {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-image: repeating-linear-gradient(30deg, #0088dd, red, #0088dd 20px) 60;
+
+  }
+
+/* style pour bouton soumettre */
+
+#soumettre{
+  /*background-color: darkred;*/
+
+}
+    #soumettre > a{
+      color: white;
+    }
+
+    .animate
+    {
+      transition: all 0.1s;
+      -webkit-transition: all 0.1s;
+    }
+
+    .action-button
+    {
+      position: relative;
+      padding: 10px 40px;
+      margin: 0px 10px 10px 0px;
+
+      border-radius: 10px;
+    /*  font-family: 'Pacifico', cursive;*/
+    /*  font-size: 25px;*/
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    .red
+    {
+      background-color: darkred;
+      border-bottom: 5px solid darkred;
+      text-shadow: 0px -2px darkred;
+    }
+
+    .action-button:active
+    {
+      transform: translate(0px,5px);
+      -webkit-transform: translate(0px,5px);
+      border-bottom: 1px solid;
+    }
+
+    input[type=button]{
+
+      border: 0;
+      line-height: 2.5;
+      padding: 0 20px;
+      font-size: 1rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
+      border-radius: 10px;
+      background-color: rgba(220, 0, 0, 1);
+      background-image: linear-gradient(to top left,
+      rgba(0, 0, 0, .2),
+      rgba(0, 0, 0, .2) 30%,
+      rgba(0, 0, 0, 0));
+      box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+      inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+    }
+
+    input[type=button]:hover{
+
+      background-color: rgba(255, 0, 0, 1);
+    }
+
+    input[type=button]:active {
+      box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+      inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+
+  </style>
+
+     /* calcler les prix des evenements et compter */
+
+
+
+  <script>
+
+    $(document).ready(function(){
+      /* quend on clique sur les options */
+      $('.choix').click(function(){
+        /* initialisation de la variable somme */
+        var somme = 0;
+        /*lorsque on clique sur chaque option */
+
+        $('.choix:checked').each(function(){
+
+          /* somme des checkbox*/
+
+          somme += parseInt($(this).val());
+
+          /* recuperation de la prestation */
+
+          var sm = 0;
+
+          for(var i=0;i < $('.choix').length; i++){
+
+            if($('.choix[i]:checked')){
+
+              sm = $(this).val();
+            }
+            
+          //  $('#tel').val(sm);
+
+          }
+
+        })
+
+
+
+
+        $('#somme').val(somme);
+
+        var nbre = $("[type='checkbox']:checked").length;
+
+        $('#nbre').val($("[type='checkbox']:checked").length);
+
+      })
+
+
+
+    })
+
+
+
+
+
+
+
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+            <div class="navbar-brand">
+              <a href="votreManif.html"><img src="logo/logo_votreManif.png" style="width: 5vh"></a>
+            </div>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <div class="menu">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="index.html">Logiciels</a></li>
+                <li role="presentation"><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+                <li role="presentation"><a href="votreManif.html" class="active">Votre manif</a></li>
+                <li role="presentation"><a href="galerie.html">Galerie projet</a></li>
+                <li role="presentation"><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="0">
+
+      <img src="images/services/banniere.jpg" class="banniere">
+
+  </div>
+  <section id="blog" class="container">
+    <div class="text-center">
+      <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+        <h2>Votre manif</h2>
+      </div>
+      <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.6s">
+        <p>
+
+         Une équipe dynamique et espérimenté capable de réaliser vos projets évènementiels et audiovisuels.
+
+        </p>
+      </div>
+    </div>
+
+     <div class="wow bounceInRight" data-wow-delay="0.9s" data-wow-offset="0">
+          <div class="text-center">
+
+            <!--<button type="button" class="btn btn-default"><a href="contact.html">NOUS CONTACTER</a></button>-->
+            <p>1-Type d'évènement souhaitez-vous organiser?*<br>
+              Obtenez un devis chap chap en cliquant sur les options
+            </p>
+
+
+
+          </div>
+     </div>
+<!-- ======================= table ==============================-->
+
+    <table id="titre">
+      <tr class="titre">
+
+        <th>PRESTATION</th>
+        <th>OPTION</th>
+        <th class="money">PRIX</th>
+        <th></th>
+
+      </tr>
+    </table>
+
+   <form method="" action="">
+
+   <div id="form">
+    <table class="wow bounceInUp" data-wow-offset="0" data-wow-delay="0.9s">
+
+      <!--  <tr class="titre">
+
+            <th>PRESTATION</th>
+            <th>OPTION</th>
+            <th class="money">PRIX</th>
+            <th></th>
+
+        </tr> -->
+
+        <tr>
+
+            <td rowspan="2" style="font-family: century-gothic, sans-serif;"> ANNIVERSAIRE </td>
+            <td> Fichier numérique </td>
+            <td class="money">F CFA 45.000</td>
+            <td><input type="checkbox" name="choix" class="choix" id="" value="45000" ></td>
+
+
+        </tr>
+        <tr class="">
+
+
+            <td>50 cartes + numérique</td>
+            <td class="money">F CFA 60.000</td>
+            <td><input type="checkbox" name="choix" class="choix" id="" value="60000"></td>
+
+
+        </tr>
+        <tr class="even">
+
+            <td rowspan="4" style="font-family: century-gothic, sans-serif;">BAPTEME</td>
+            <td>Photo simple</td>
+            <td class="money">F CFA 70.000 </td>
+          <td><input type="checkbox" name="choix" class="choix" id="" value="70000"></td>
+
+        </tr>
+
+        <tr class="even">
+
+
+            <td>Photo + vidéo</td>
+            <td class="money">F CFA 110.000</td>
+          <td><input type="checkbox" name="choix" class="choix" id="" value="110000"></td>
+
+        </tr>
+
+        <tr class="even">
+
+
+          <td>Photo + vidéo + 1 album de 60 photos</td>
+          <td class="money">F CFA 130.000</td>
+          <td><input type="checkbox" name="choix" class="choix" id="" value="130000"></td>
+
+        </tr>
+
+        <tr class="even">
+
+
+          <td>Vidéo simple</td>
+          <td class="money">F CFA 60.000</td>
+          <td><input type="checkbox" name="choix" class="choix" id="" value="60000"></td>
+
+        </tr>
+        <tr>
+
+          <td style="font-family: century-gothic, sans-serif;">SORTIE DETENTE</td>
+          <td>Photo simple (toute le journée) sans frais de transport</td>
+          <td class="money">F CFA 70.000</td>
+          <td><input type="checkbox" name="choix" class="choix" id="" value="70000"></td>
+
+        </tr>
+      <tr class="even">
+
+        <td rowspan="4" style="font-family: century-gothic, sans-serif;">DOT</td>
+        <td>Photo simple</td>
+        <td class="money">F CFA 100.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="100000"></td>
+
+      </tr>
+      <tr class="even">
+
+        <td>Photo + 1 album de 80 photos</td>
+        <td class="money">F CFA 130.000</td>
+        <td><input type="checkbox" class="choix" id="" value="130000"></td>
+
+      </tr>
+      <tr class="even">
+
+        <td>Vidéo simple </td>
+        <td class="money">F CFA 110.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="110000"></td>
+
+      </tr>
+      <tr class="even">
+
+        <td>Photo + vidéo + 1 album de 100 photos </td>
+        <td class="money">F CFA 210.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="210000"></td>
+
+      </tr>
+      <tr class="">
+        <td rowspan="4" style="font-family: century-gothic, sans-serif;">MARIAGE</td>
+        <td>Photo simple</td>
+        <td class="money">F CFA 110.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="110000"></td>
+
+      </tr>
+      <tr class="">
+
+        <td>Photo + 1 album de 100 photos</td>
+        <td class="money">F CFA 140.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="140000"></td>
+
+      </tr>
+      <tr class="">
+
+        <td>Vidéo simple</td>
+        <td class="money">F CFA 130.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="130000"></td>
+
+      </tr>
+      <tr class="">
+
+        <td>Vidéo + drone</td>
+        <td class="money">F CFA 180.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="180000"></td>
+
+      </tr>
+      <tr class="even">
+        <td rowspan="2">PREWEDDING</td>
+        <td>Photo + video</td>
+        <td class="money">F CFA 110.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="110000"></td>
+
+      </tr>
+      <tr class="even">
+        <td>Photo + video + drone + 1 album de 100 photos + 1 cadre 40x60</td>
+        <td class="money">F CFA 360.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="360000"></td><!-- == arret ==-->
+
+      </tr>
+      <tr class="">
+        <td rowspan="4" style="font-family: century-gothic, sans-serif;">MARIAGE MUSULMAN</td>
+        <td>Photo simple(lundi, jeudi, samedi) mise en chambre mosqué + danse</td>
+        <td class="money">F CFA 210.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="210000"></td>
+
+      </tr>
+      <tr class="">
+        <td>1 album de 100 photos + 1 cadre 40x60</td>
+        <td class="money">F CFA 260.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="260000"></td>
+
+      </tr>
+      <tr class="">
+
+        <td>Vidéo simple</td>
+        <td class="money">F CFA 210.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="210000" ></td>
+
+      </tr>
+      <tr class="">
+
+        <td>Vidéo simple + drone</td>
+        <td class="money">F CFA 270.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="270000"></td>
+
+      </tr>
+      <tr class="even">
+        <td rowspan="3" style="font-family: century-gothic, sans-serif;">PHOTO + VIDEO</td>
+        <td>Numérique</td>
+        <td class="money">F CFA 360.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="360000"></td>
+
+      </tr>
+      <tr class="even">
+        <td>1 album de 100 photos + 1 cadre 40x60</td>
+        <td class="money">F CFA 410.000 </td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="410000"></td>
+
+      </tr>
+      <tr class="even">
+        <td>1 Drone valable 1 jour</td>
+        <td class="money">F CFA 70.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="70000"></td>
+
+      </tr>
+      <tr class="">
+        <td rowspan="3" style="font-family: century-gothic, sans-serif;">EVENT</td>
+        <td>Vidéo spot publicitaire</td>
+        <td class="money">F CFA 160.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="160000"></td>
+
+      </tr>
+
+      <tr class="">
+        <td>Conception d'affiche entreprise</td>
+        <td class="money">F CFA 40.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="40000"></td>
+      </tr>
+      <tr class="">
+        <td>Affiche bar restaurant et autres</td>
+        <td class="money">F CFA 25.000</td>
+        <td><input type="checkbox" name="choix" class="choix" id="" value="25000"></td>
+      </tr>
+
+    </table>
+   </div>
+   <!-- ========================add formulaire ======================================  -->
+
+   <table>
+     <tr>
+      <td>Vous avez opté pour:</td><td><input type="text" id="nbre" class="nbre" style="width: 3rem; text-align: center" readonly> option(s) </td> <td>pour un montant de:</td><td><input type="text" id="somme" class="somme" placeholder="" readonly style="width: 8rem; text-align: center"></td><td>F CFA</td>
+     </tr>
+   </table>
+
+    <div class="wow bounceInRight" data-wow-delay="0.9s" data-wow-offset="0">
+      <div class="text-center">
+
+        <!--<button type="button" class="btn btn-default"><a href="contact.html">NOUS CONTACTER</a></button>-->
+
+        <p>2-Date de l'évènement ?*</p>
+      </div>
+
+    </div>
+
+    <table>
+      <tr>
+        <td>Entrer la date de l'évènement svp!</td> <td> <input type="text" class="eventDate" name="eventDate" placeholder="01/04/2020"></td>
+      </tr>
+
+      <tr>
+        <td>La période de l'évènement [jour(s)] </td><td><input type="text" class="jour" name="jour" placeholder="1"> </td></tr>
+      </tr>
+      <tr>
+        <td>Entrer votre nom svp!</td> <td> <input type="text" class="nom"  name="nom" placeholder=""></td>
+      </tr>
+
+      <tr>
+        <td>Entrer votre numero de Télephone svp! </td><td><input type="text" name="tel" id="tel" placeholder=""> </td></tr>
+      </tr>
+    </table>
+
+    <div class="wow bounceInRight" data-wow-delay="0.9s" data-wow-offset="0">
+
+      <div class="text-center" >
+
+       <!-- <button type="button" class="btn btn-default" id="soumettre"><a href="contact.html"></a></button>  -->
+
+        <!-- <a class="action-button shadow animate red" id="send" onclick="send()">SOUMETTRE VOTRE DEVIS</a> -->
+
+        <input type="button" value="OBTENIR VOTRE DEVIS" onclick="send()">
+
+
+      </div>
+    </div>
+
+ </form>
+
+  </section>
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+          <h2>TCORPANDCO</h2>
+          <p>Nous sommes une structure Multi-services dynamique disposée à vous aider et vous accompagner dans vos solutions.Nous sommes à votre disposition pour d'éventuelles informations et toujours prêt à vous servir.</p>
+
+          <ul class="social-network">
+
+            <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
+
+        </div>
+
+        <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+          <h3>CONTACT INFO</h3>
+          <ul>
+            <li><i class="fa fa-home fa-2x"></i>  Côte d'ivoire, Abidjan-angré 8ème tranche, djibi 1 non loin du carrefour Mandela </li>
+            <hr>
+            <li><i class="fa fa-phone fa-2x"></i>  +225 22 59 23 20 / 22 50 26 64 </li>
+            <hr>
+            <li><i class="fa fa-envelope fa-2x"></i>  services@tcorpandco.com </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            &copy; TCORP & CO. Tous droits réservés.
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Multi
+              -->
+              <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <ul class="pull-right">
+              <li><a href="index.html">Logiciels</a></li>
+              <li><a href="https://www.vetparis.net/" target="_blank">Vente en ligne</a></li>
+              <li><a href="votreManif.html">Votre manif</a></li>
+              <li><a href="galerie.html">Galerie photo</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pull-right">
+
+          <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/functions.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+
+</body>
+
+</html>
