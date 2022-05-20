@@ -1,2 +1,2 @@
 # tcorpandco
-built a static website for a start-up 
+built a dynamic website for a start-up 
